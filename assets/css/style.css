@@ -19,16 +19,15 @@
   max-width: 1440px;
   padding: 50px 30px 50px 80px;
   margin: 0 auto;
-  border: 1px solid black;
   border-radius: 30px;
 }
 
-/* line 24, ../scss/reset.scss */
+/* line 23, ../scss/reset.scss */
 img {
   max-width: 100%;
 }
 
-/* line 28, ../scss/reset.scss */
+/* line 27, ../scss/reset.scss */
 h1,
 h2,
 h3,
@@ -37,35 +36,55 @@ p {
   margin: 0;
 }
 
-/* line 36, ../scss/reset.scss */
+@media screen and (max-width: 770px) {
+  /* line 35, ../scss/reset.scss */
+  h2 {
+    font-size: 24px !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  /* line 41, ../scss/reset.scss */
+  h3 {
+    font-size: 19px !important;
+  }
+}
+
+/* line 47, ../scss/reset.scss */
 body {
   margin: 0;
 }
-/* line 39, ../scss/reset.scss */
+/* line 50, ../scss/reset.scss */
 body.dark {
   background-color: #000;
 }
-/* line 42, ../scss/reset.scss */
-body.dark h1,
-body.dark h2,
-body.dark h3,
-body.dark h4,
-body.dark p {
+/* line 55, ../scss/reset.scss */
+body.dark main h1,
+body.dark main h2,
+body.dark main h3,
+body.dark main h4,
+body.dark main p {
   color: #fff !important;
 }
+/* line 63, ../scss/reset.scss */
+body.dark main .main-content h1,
+body.dark main .main-content p,
+body.dark main .secao-04 .title h3 {
+  color: #00252e !important;
+}
 
-/* line 52, ../scss/reset.scss */
+/* line 72, ../scss/reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 57, ../scss/reset.scss */
+/* line 77, ../scss/reset.scss */
 li {
   list-style: none;
 }
 
-/* line 61, ../scss/reset.scss */
+/* line 81, ../scss/reset.scss */
 button {
   border: 0;
   cursor: pointer;
@@ -74,7 +93,7 @@ button {
   border-radius: 30px;
 }
 
-/* line 69, ../scss/reset.scss */
+/* line 89, ../scss/reset.scss */
 .attribution {
   display: block;
   position: fixed;
@@ -87,7 +106,7 @@ button {
   border-radius: 100%;
   z-index: 99;
 }
-/* line 81, ../scss/reset.scss */
+/* line 101, ../scss/reset.scss */
 .attribution p {
   visibility: hidden;
   position: fixed;
@@ -105,29 +124,35 @@ button {
   transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
   color: #fff;
 }
-/* line 99, ../scss/reset.scss */
+/* line 119, ../scss/reset.scss */
 .attribution a {
   color: cyan;
 }
-/* line 104, ../scss/reset.scss */
+/* line 124, ../scss/reset.scss */
 .attribution:hover p {
   visibility: visible;
   transform: rotateY(0);
   background-color: black;
 }
 
-/* line 112, ../scss/reset.scss */
+/* line 132, ../scss/reset.scss */
 .switch {
   position: absolute;
   right: 30px;
-  top: 25px;
+  top: 60px;
   display: inline-block;
   width: 60px;
   height: 34px;
 }
+@media screen and (max-width: 770px) {
+  /* line 132, ../scss/reset.scss */
+  .switch {
+    top: 100px;
+  }
+}
 
 /* Hide default HTML checkbox */
-/* line 122, ../scss/reset.scss */
+/* line 146, ../scss/reset.scss */
 .switch input {
   opacity: 0;
   width: 0;
@@ -135,7 +160,7 @@ button {
 }
 
 /* The slider */
-/* line 129, ../scss/reset.scss */
+/* line 153, ../scss/reset.scss */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -148,7 +173,7 @@ button {
   transition: .4s;
 }
 
-/* line 141, ../scss/reset.scss */
+/* line 165, ../scss/reset.scss */
 .slider:before {
   position: absolute;
   content: "";
@@ -161,17 +186,17 @@ button {
   transition: .4s;
 }
 
-/* line 153, ../scss/reset.scss */
+/* line 177, ../scss/reset.scss */
 input:checked + .slider {
-  background-color: #000;
+  background-color: #ff52bf;
 }
 
-/* line 157, ../scss/reset.scss */
+/* line 181, ../scss/reset.scss */
 input:focus + .slider {
-  box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #ff52bf;
 }
 
-/* line 161, ../scss/reset.scss */
+/* line 185, ../scss/reset.scss */
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -179,12 +204,17 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-/* line 168, ../scss/reset.scss */
+/* line 192, ../scss/reset.scss */
 .slider.round {
   border-radius: 34px;
 }
 
-/* line 172, ../scss/reset.scss */
+/* line 196, ../scss/reset.scss */
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* line 200, ../scss/reset.scss */
+a {
+  text-decoration: none;
 }

@@ -13,11 +13,10 @@
     margin: 0 auto;
 }
 
-.main-container{
+.main-container {
     max-width: 1440px;
     padding: $large $trim $large $x-large;
     margin: 0 auto;
-    border: 1px solid black;
     border-radius: $trim;
 }
 
@@ -33,18 +32,39 @@ p {
     margin: 0;
 }
 
+h2 {
+    @include bp(max-width, $bp-medium) {
+        font-size: 24px !important;
+    }
+}
+
+h3 {
+    @include bp(max-width, $bp-medium) {
+        font-size: 19px !important;
+    }
+}
+
 body {
     margin: 0;
 
     &.dark {
         background-color: $c-black;
 
-        h1,
-        h2,
-        h3,
-        h4,
-        p {
-            color: $c-white !important;
+        main {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            p {
+                color: $c-white !important;
+            }
+
+            .main-content h1,
+            .main-content p,
+            .secao-04 .title h3 {
+                color: $c-very-dark-cyan !important;
+            }
         }
     }
 }
@@ -112,10 +132,14 @@ button {
 .switch {
     position: absolute;
     right: $trim;
-    top: $box-spacing + $small;
+    top: 60px;
     display: inline-block;
     width: 60px;
     height: 34px;
+
+    @include bp(max-width, $bp-medium) {
+        top: $big;
+    }
 }
 
 /* Hide default HTML checkbox */
@@ -151,11 +175,11 @@ button {
 }
 
 input:checked+.slider {
-    background-color: $c-black;
+    background-color: $c-pink;
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px $c-black;
+    box-shadow: 0 0 1px $c-pink;
 }
 
 input:checked+.slider:before {
@@ -171,4 +195,8 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
 }
