@@ -2,9 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 /* line 4, ../scss/home.scss */
 header {
+  position: sticky;
   background-color: #ebfbff;
+  top: 0;
 }
-/* line 7, ../scss/home.scss */
+/* line 9, ../scss/home.scss */
 header .container {
   padding: 50px 30px;
   display: flex;
@@ -12,62 +14,62 @@ header .container {
   justify-content: space-between;
 }
 @media screen and (max-width: 770px) {
-  /* line 11, ../scss/home.scss */
+  /* line 13, ../scss/home.scss */
   header .container .logo img {
     max-width: 150px;
   }
 }
-/* line 17, ../scss/home.scss */
+/* line 19, ../scss/home.scss */
 header .container button {
   background-color: #fff;
   width: 100%;
   max-width: 250px;
 }
-/* line 22, ../scss/home.scss */
+/* line 24, ../scss/home.scss */
 header .container button span {
   font-family: "Poppins", sans-serif;
   color: #00252e;
   font-weight: 600;
   transition: 0.5s;
 }
-/* line 28, ../scss/home.scss */
+/* line 30, ../scss/home.scss */
 header .container button:hover span {
   color: #808d99;
 }
 @media screen and (max-width: 770px) {
-  /* line 17, ../scss/home.scss */
+  /* line 19, ../scss/home.scss */
   header .container button {
     max-width: 120px;
     padding: 5px 15px;
   }
-  /* line 37, ../scss/home.scss */
+  /* line 39, ../scss/home.scss */
   header .container button span {
     font-size: 13px;
   }
 }
 
-/* line 46, ../scss/home.scss */
+/* line 48, ../scss/home.scss */
 main .main-content {
   background-color: #ebfbff;
 }
-/* line 49, ../scss/home.scss */
+/* line 51, ../scss/home.scss */
 main .main-content .container {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-/* line 52, ../scss/home.scss */
+/* line 54, ../scss/home.scss */
 main .main-content .container .left-content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-/* line 55, ../scss/home.scss */
+/* line 57, ../scss/home.scss */
 main .main-content .container .left-content .title {
   width: 100%;
   max-width: 500px;
 }
-/* line 59, ../scss/home.scss */
+/* line 61, ../scss/home.scss */
 main .main-content .container .left-content .title h1 {
   font-family: "Poppins", sans-serif;
   color: #00252e;
@@ -75,59 +77,59 @@ main .main-content .container .left-content .title h1 {
   font-size: 40px;
 }
 @media screen and (max-width: 770px) {
-  /* line 59, ../scss/home.scss */
+  /* line 61, ../scss/home.scss */
   main .main-content .container .left-content .title h1 {
     font-size: 28px;
   }
 }
-/* line 68, ../scss/home.scss */
+/* line 70, ../scss/home.scss */
 main .main-content .container .left-content p {
   color: #00252e;
   font-weight: 400;
   width: 100%;
   max-width: 650px;
 }
-/* line 74, ../scss/home.scss */
+/* line 76, ../scss/home.scss */
 main .main-content .container .left-content button {
   background-color: #ff52bf;
   width: 100%;
   max-width: 300px;
 }
-/* line 79, ../scss/home.scss */
+/* line 81, ../scss/home.scss */
 main .main-content .container .left-content button span {
   color: #fff;
   font-weight: 700;
 }
-/* line 83, ../scss/home.scss */
+/* line 85, ../scss/home.scss */
 main .main-content .container .left-content button:hover {
   opacity: 0.5;
 }
 @media screen and (max-width: 770px) {
-  /* line 74, ../scss/home.scss */
+  /* line 76, ../scss/home.scss */
   main .main-content .container .left-content button {
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 94, ../scss/home.scss */
+  /* line 96, ../scss/home.scss */
   main .main-content .container .left-content .title h1,
   main .main-content .container .left-content p {
     text-align: center;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 49, ../scss/home.scss */
+  /* line 51, ../scss/home.scss */
   main .main-content .container {
     flex-direction: column;
   }
 }
-/* line 107, ../scss/home.scss */
+/* line 109, ../scss/home.scss */
 main .secao-01,
 main .secao-02,
 main .secao-03 {
   margin: 100px 0;
 }
-/* line 112, ../scss/home.scss */
+/* line 114, ../scss/home.scss */
 main .secao-01 .main-container,
 main .secao-02 .main-container,
 main .secao-03 .main-container {
@@ -136,7 +138,7 @@ main .secao-03 .main-container {
   justify-content: space-between;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-/* line 118, ../scss/home.scss */
+/* line 120, ../scss/home.scss */
 main .secao-01 .main-container .left-content .title h2,
 main .secao-01 .main-container .right-content .title h2,
 main .secao-02 .main-container .left-content .title h2,
@@ -149,7 +151,7 @@ main .secao-03 .main-container .right-content .title h2 {
   font-size: 30px;
   margin-bottom: 15px;
 }
-/* line 123, ../scss/home.scss */
+/* line 125, ../scss/home.scss */
 main .secao-01 .main-container .left-content p,
 main .secao-01 .main-container .right-content p,
 main .secao-02 .main-container .left-content p,
@@ -162,7 +164,7 @@ main .secao-03 .main-container .right-content p {
   max-width: 500px;
 }
 @media screen and (max-width: 770px) {
-  /* line 131, ../scss/home.scss */
+  /* line 133, ../scss/home.scss */
   main .secao-01 .main-container .left-content .title h2,
   main .secao-01 .main-container .left-content p,
   main .secao-01 .main-container .right-content .title h2,
@@ -178,7 +180,7 @@ main .secao-03 .main-container .right-content p {
     text-align: center;
   }
 }
-/* line 140, ../scss/home.scss */
+/* line 142, ../scss/home.scss */
 main .secao-01 .main-container .right-content img,
 main .secao-01 .main-container .left-content img,
 main .secao-02 .main-container .right-content img,
@@ -189,7 +191,7 @@ main .secao-03 .main-container .left-content img {
   max-width: 500px;
 }
 @media screen and (max-width: 770px) {
-  /* line 112, ../scss/home.scss */
+  /* line 114, ../scss/home.scss */
   main .secao-01 .main-container,
   main .secao-02 .main-container,
   main .secao-03 .main-container {
@@ -199,7 +201,7 @@ main .secao-03 .main-container .left-content img {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 107, ../scss/home.scss */
+  /* line 109, ../scss/home.scss */
   main .secao-01,
   main .secao-02,
   main .secao-03 {
@@ -207,20 +209,20 @@ main .secao-03 .main-container .left-content img {
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 159, ../scss/home.scss */
+  /* line 161, ../scss/home.scss */
   main .secao-02 .main-container {
     flex-direction: column;
   }
 }
-/* line 166, ../scss/home.scss */
+/* line 168, ../scss/home.scss */
 main .secao-03 {
   margin-bottom: 200px;
 }
-/* line 170, ../scss/home.scss */
+/* line 172, ../scss/home.scss */
 main .secao-04 {
   position: relative;
 }
-/* line 173, ../scss/home.scss */
+/* line 175, ../scss/home.scss */
 main .secao-04 .container {
   display: flex;
   align-items: center;
@@ -235,30 +237,30 @@ main .secao-04 .container {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-/* line 184, ../scss/home.scss */
+/* line 186, ../scss/home.scss */
 main .secao-04 .container .title h3 {
   font-family: "Poppins", sans-serif;
   color: #00252e;
   font-weight: 600;
   font-size: 30px;
 }
-/* line 188, ../scss/home.scss */
+/* line 190, ../scss/home.scss */
 main .secao-04 .container button {
   background-color: #ff52bf;
   width: 100%;
   max-width: 400px;
 }
-/* line 193, ../scss/home.scss */
+/* line 195, ../scss/home.scss */
 main .secao-04 .container button span {
   color: #fff;
   font-weight: 700;
 }
-/* line 197, ../scss/home.scss */
+/* line 199, ../scss/home.scss */
 main .secao-04 .container button:hover {
   opacity: 0.5;
 }
 @media screen and (max-width: 770px) {
-  /* line 188, ../scss/home.scss */
+  /* line 190, ../scss/home.scss */
   main .secao-04 .container button {
     max-width: 200px;
     padding: 10px 15px;
@@ -266,13 +268,13 @@ main .secao-04 .container button:hover {
     align-items: center;
     justify-content: center;
   }
-  /* line 206, ../scss/home.scss */
+  /* line 208, ../scss/home.scss */
   main .secao-04 .container button span {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 173, ../scss/home.scss */
+  /* line 175, ../scss/home.scss */
   main .secao-04 .container {
     width: 90%;
     top: -150px;
@@ -280,30 +282,30 @@ main .secao-04 .container button:hover {
   }
 }
 
-/* line 221, ../scss/home.scss */
+/* line 223, ../scss/home.scss */
 footer {
   background-color: #00252e;
 }
-/* line 224, ../scss/home.scss */
+/* line 226, ../scss/home.scss */
 footer .container {
   padding: 200px 30px;
 }
 @media screen and (max-width: 770px) {
-  /* line 224, ../scss/home.scss */
+  /* line 226, ../scss/home.scss */
   footer .container {
     padding: 120px 30px;
   }
 }
-/* line 232, ../scss/home.scss */
+/* line 234, ../scss/home.scss */
 footer .logo {
   margin-bottom: 30px;
 }
-/* line 236, ../scss/home.scss */
+/* line 238, ../scss/home.scss */
 footer .footer-content {
   display: flex;
   justify-content: space-between;
 }
-/* line 239, ../scss/home.scss */
+/* line 241, ../scss/home.scss */
 footer .footer-content .footer-info {
   display: flex;
   flex-direction: column;
@@ -311,103 +313,103 @@ footer .footer-content .footer-info {
   width: 100%;
   max-width: 500px;
 }
-/* line 244, ../scss/home.scss */
+/* line 246, ../scss/home.scss */
 footer .footer-content .footer-info .item:first-child {
   align-items: flex-start;
 }
-/* line 247, ../scss/home.scss */
+/* line 249, ../scss/home.scss */
 footer .footer-content .footer-info .item:first-child img {
   margin-top: 5px;
 }
-/* line 252, ../scss/home.scss */
+/* line 254, ../scss/home.scss */
 footer .footer-content .footer-info .item {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-/* line 255, ../scss/home.scss */
+/* line 257, ../scss/home.scss */
 footer .footer-content .footer-info .item p {
   color: #fff;
   font-weight: 400;
 }
-/* line 261, ../scss/home.scss */
+/* line 263, ../scss/home.scss */
 footer .footer-content .footer-about {
   display: flex;
   gap: 50px;
 }
-/* line 264, ../scss/home.scss */
+/* line 266, ../scss/home.scss */
 footer .footer-content .footer-about ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-/* line 267, ../scss/home.scss */
+/* line 269, ../scss/home.scss */
 footer .footer-content .footer-about ul li {
   color: #fff;
   font-weight: 400;
   cursor: pointer;
 }
-/* line 271, ../scss/home.scss */
+/* line 273, ../scss/home.scss */
 footer .footer-content .footer-about ul li:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 770px) {
-  /* line 264, ../scss/home.scss */
+  /* line 266, ../scss/home.scss */
   footer .footer-content .footer-about ul {
     gap: 15px;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 261, ../scss/home.scss */
+  /* line 263, ../scss/home.scss */
   footer .footer-content .footer-about {
     flex-direction: column;
     gap: 15px;
   }
 }
-/* line 287, ../scss/home.scss */
+/* line 289, ../scss/home.scss */
 footer .footer-content .sociais {
   display: flex;
   gap: 30px;
 }
-/* line 290, ../scss/home.scss */
+/* line 292, ../scss/home.scss */
 footer .footer-content .sociais li {
   cursor: pointer;
 }
-/* line 294, ../scss/home.scss */
+/* line 296, ../scss/home.scss */
 footer .footer-content .sociais li:hover svg {
   fill: #ff52bf;
   transition: 0.5s;
 }
 @media screen and (max-width: 770px) {
-  /* line 287, ../scss/home.scss */
+  /* line 289, ../scss/home.scss */
   footer .footer-content .sociais {
     justify-content: center;
   }
 }
 @media screen and (max-width: 770px) {
-  /* line 236, ../scss/home.scss */
+  /* line 238, ../scss/home.scss */
   footer .footer-content {
     flex-direction: column;
     gap: 30px;
   }
 }
-/* line 312, ../scss/home.scss */
+/* line 314, ../scss/home.scss */
 footer .copyright {
   margin-top: 30px;
   display: flex;
   justify-content: flex-end;
 }
-/* line 316, ../scss/home.scss */
+/* line 318, ../scss/home.scss */
 footer .copyright p {
   color: #fff;
   font-weight: 400;
 }
 @media screen and (max-width: 770px) {
-  /* line 312, ../scss/home.scss */
+  /* line 314, ../scss/home.scss */
   footer .copyright {
     justify-content: center;
   }
-  /* line 323, ../scss/home.scss */
+  /* line 325, ../scss/home.scss */
   footer .copyright p {
     font-size: 15px;
   }

@@ -143,6 +143,7 @@ button {
   display: inline-block;
   width: 60px;
   height: 34px;
+  z-index: 10;
 }
 @media screen and (max-width: 770px) {
   /* line 132, ../scss/reset.scss */
@@ -152,7 +153,7 @@ button {
 }
 
 /* Hide default HTML checkbox */
-/* line 146, ../scss/reset.scss */
+/* line 147, ../scss/reset.scss */
 .switch input {
   opacity: 0;
   width: 0;
@@ -160,7 +161,7 @@ button {
 }
 
 /* The slider */
-/* line 153, ../scss/reset.scss */
+/* line 154, ../scss/reset.scss */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -173,7 +174,7 @@ button {
   transition: .4s;
 }
 
-/* line 165, ../scss/reset.scss */
+/* line 166, ../scss/reset.scss */
 .slider:before {
   position: absolute;
   content: "";
@@ -186,17 +187,17 @@ button {
   transition: .4s;
 }
 
-/* line 177, ../scss/reset.scss */
+/* line 178, ../scss/reset.scss */
 input:checked + .slider {
   background-color: #ff52bf;
 }
 
-/* line 181, ../scss/reset.scss */
+/* line 182, ../scss/reset.scss */
 input:focus + .slider {
   box-shadow: 0 0 1px #ff52bf;
 }
 
-/* line 185, ../scss/reset.scss */
+/* line 186, ../scss/reset.scss */
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
@@ -204,17 +205,17 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-/* line 192, ../scss/reset.scss */
+/* line 193, ../scss/reset.scss */
 .slider.round {
   border-radius: 34px;
 }
 
-/* line 196, ../scss/reset.scss */
+/* line 197, ../scss/reset.scss */
 .slider.round:before {
   border-radius: 50%;
 }
 
-/* line 200, ../scss/reset.scss */
+/* line 201, ../scss/reset.scss */
 a {
   text-decoration: none;
 }

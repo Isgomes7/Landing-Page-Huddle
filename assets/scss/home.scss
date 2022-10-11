@@ -2,7 +2,9 @@
 @import "var";
 
 header {
+    position: sticky;
     background-color: $c-very-pale-cyan;
+    top: 0;
 
     .container {
         padding: $large $trim;
