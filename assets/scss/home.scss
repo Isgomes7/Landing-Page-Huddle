@@ -1,0 +1,99 @@
+@import "mixin";
+@import "var";
+
+header {
+    background-color: $c-very-pale-cyan;
+
+    .container {
+        padding: $large $trim;
+        @include flex(center, space-between);
+
+        button {
+            background-color: $c-white;
+            width: 100%;
+            max-width: 250px;
+
+            span {
+                @include text($f-stack-sans, $c-very-dark-cyan, '', 600);
+            }
+        }
+    }
+}
+
+main {
+    .main-content {
+        background-color: $c-very-pale-cyan;
+
+        .container {
+            @include flex(center);
+
+            .left-content {
+                @include flex('', '', column, $trim);
+
+                .title {
+                    width: 100%;
+                    max-width: 500px;
+
+                    h1 {
+                        @include text($f-stack-sans, $c-very-dark-cyan, '', 600, 40px);
+                    }
+                }
+
+                p {
+                    @include text('', $c-very-dark-cyan, '', 400);
+                    width: 100%;
+                    max-width: 630px;
+                }
+
+                button {
+                    background-color: $c-pink;
+                    width: 100%;
+                    max-width: 300px;
+
+                    span {
+                        @include text('', $c-white, '', 700);
+                    }
+                }
+            }
+        }
+    }
+
+    .secao-01,
+    .secao-02,
+    .secao-03 {
+        margin: $big 0;
+
+        .main-container {
+            @include flex(center, space-between);
+            border: 1px solid $c-black;
+
+            .left-content,
+            .right-content {
+                .title h2 {
+                    @include text($f-stack-sans, $c-very-dark-cyan, '', 600, $trim);
+                    margin-bottom: $trim-small;
+                }
+
+                p {
+                    @include text('', $c-grayish-blue, '', 400);
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+
+            .right-content,
+            .left-content {
+                img {
+                    width: 100%;
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+
+    .secao-04 {
+        .container {
+            @include flex('', '', column, $trim);
+        }
+    }
+}

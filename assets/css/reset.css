@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* line 4, ../scss/reset.scss */
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* line 10, ../scss/reset.scss */
+.container {
+  max-width: 1440px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* line 16, ../scss/reset.scss */
+.main-container {
+  max-width: 1440px;
+  padding: 50px 30px 50px 80px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+/* line 24, ../scss/reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 28, ../scss/reset.scss */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* line 36, ../scss/reset.scss */
+body {
+  margin: 0;
+}
+/* line 39, ../scss/reset.scss */
+body.dark {
+  background-color: #000;
+}
+/* line 42, ../scss/reset.scss */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p {
+  color: #fff !important;
+}
+
+/* line 52, ../scss/reset.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 57, ../scss/reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 61, ../scss/reset.scss */
+button {
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 15px 50px;
+  border-radius: 30px;
+}
+
+/* line 69, ../scss/reset.scss */
+.attribution {
+  display: block;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-image: url(https://avatars.githubusercontent.com/u/106533794?s=400&u=078510c3e3c9adc24bd5f2e8bccb69424a64c5a6&v=44);
+  background-size: 100%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+  z-index: 99;
+}
+/* line 81, ../scss/reset.scss */
+.attribution p {
+  visibility: hidden;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 5rem;
+  width: 16rem;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem 1rem 0;
+  background-color: var(--dark-blue);
+  font-size: .9rem;
+  z-index: 999;
+  box-shadow: 0 0 0.4rem var(--cyan);
+  transform: rotateY(90deg);
+  transform-origin: right;
+  transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+  color: #fff;
+}
+/* line 99, ../scss/reset.scss */
+.attribution a {
+  color: cyan;
+}
+/* line 104, ../scss/reset.scss */
+.attribution:hover p {
+  visibility: visible;
+  transform: rotateY(0);
+  background-color: black;
+}
+
+/* line 112, ../scss/reset.scss */
+.switch {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+/* line 122, ../scss/reset.scss */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+/* line 129, ../scss/reset.scss */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 141, ../scss/reset.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 153, ../scss/reset.scss */
+input:checked + .slider {
+  background-color: #000;
+}
+
+/* line 157, ../scss/reset.scss */
+input:focus + .slider {
+  box-shadow: 0 0 1px #000;
+}
+
+/* line 161, ../scss/reset.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+/* line 168, ../scss/reset.scss */
+.slider.round {
+  border-radius: 34px;
+}
+
+/* line 172, ../scss/reset.scss */
+.slider.round:before {
+  border-radius: 50%;
+}

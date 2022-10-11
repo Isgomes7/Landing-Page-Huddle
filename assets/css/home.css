@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+/* line 4, ../scss/home.scss */
+header {
+  background-color: #ebfbff;
+}
+/* line 7, ../scss/home.scss */
+header .container {
+  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 11, ../scss/home.scss */
+header .container button {
+  background-color: #fff;
+  width: 100%;
+  max-width: 250px;
+}
+/* line 16, ../scss/home.scss */
+header .container button span {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-weight: 600;
+}
+
+/* line 24, ../scss/home.scss */
+main .main-content {
+  background-color: #ebfbff;
+}
+/* line 27, ../scss/home.scss */
+main .main-content .container {
+  display: flex;
+  align-items: center;
+}
+/* line 30, ../scss/home.scss */
+main .main-content .container .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* line 33, ../scss/home.scss */
+main .main-content .container .left-content .title {
+  width: 100%;
+  max-width: 500px;
+}
+/* line 37, ../scss/home.scss */
+main .main-content .container .left-content .title h1 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-weight: 600;
+  font-size: 40px;
+}
+/* line 42, ../scss/home.scss */
+main .main-content .container .left-content p {
+  color: #00252e;
+  font-weight: 400;
+  width: 100%;
+  max-width: 630px;
+}
+/* line 48, ../scss/home.scss */
+main .main-content .container .left-content button {
+  background-color: #ff52bf;
+  width: 100%;
+  max-width: 300px;
+}
+/* line 53, ../scss/home.scss */
+main .main-content .container .left-content button span {
+  color: #fff;
+  font-weight: 700;
+}
+/* line 61, ../scss/home.scss */
+main .secao-01,
+main .secao-02,
+main .secao-03 {
+  margin: 100px 0;
+}
+/* line 66, ../scss/home.scss */
+main .secao-01 .main-container,
+main .secao-02 .main-container,
+main .secao-03 .main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+/* line 72, ../scss/home.scss */
+main .secao-01 .main-container .left-content .title h2,
+main .secao-01 .main-container .right-content .title h2,
+main .secao-02 .main-container .left-content .title h2,
+main .secao-02 .main-container .right-content .title h2,
+main .secao-03 .main-container .left-content .title h2,
+main .secao-03 .main-container .right-content .title h2 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+/* line 77, ../scss/home.scss */
+main .secao-01 .main-container .left-content p,
+main .secao-01 .main-container .right-content p,
+main .secao-02 .main-container .left-content p,
+main .secao-02 .main-container .right-content p,
+main .secao-03 .main-container .left-content p,
+main .secao-03 .main-container .right-content p {
+  color: #808d99;
+  font-weight: 400;
+  width: 100%;
+  max-width: 500px;
+}
+/* line 86, ../scss/home.scss */
+main .secao-01 .main-container .right-content img,
+main .secao-01 .main-container .left-content img,
+main .secao-02 .main-container .right-content img,
+main .secao-02 .main-container .left-content img,
+main .secao-03 .main-container .right-content img,
+main .secao-03 .main-container .left-content img {
+  width: 100%;
+  max-width: 500px;
+}
+/* line 95, ../scss/home.scss */
+main .secao-04 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
